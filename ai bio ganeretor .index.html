@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Bio Generator</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 AI Bio Generator</h1>
+  
+  <input type="text" id="name" placeholder="Enter your name"><br>
+  <input type="text" id="niche" placeholder="Enter your niche (gaming, fitness etc)"><br>
+  
+  <button onclick="generateBio()">Generate Bio</button>
+
+  <div id="output"></div>
+
+  <script>
+    function generateBio() {
+      let name = document.getElementById("name").value;
+      let niche = document.getElementById("niche").value;
+
+      let bio = `Hi, I'm ${name} 🔥 | Passionate about ${niche} 💯 | Follow for more! 🚀`;
+
+      document.getElementById("output").innerText = bio;
+    }
+  </script>
+
+</body>
+</html>
